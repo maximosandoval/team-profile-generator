@@ -1,0 +1,9 @@
+This is where the generated HTML file will lives
+
+What is your first name?
+What is your job title?
+What is your ID?
+What is your phone number?
+What is your email address?
+What is your GitHub id?
+What school did you attend?
