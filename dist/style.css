@@ -1,1 +1,52 @@
 /*Hard code the HTML and CSS in the dist folder */
+
+.mainheader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  background-color: red;
+  color: white;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  margin-bottom: 4em;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  /* border: 1px solid #ccc; */
+  transition: 0.3s;
+  width: 40%;
+  /* padding: 1px; */
+  text-align: center;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+  background-color: #1c6ea4;
+  color: #ffffff;
+}
+
+.card-fullname {
+}
+
+.card-title {
+}
+
+.card-body {
+  background-color: #e4e4e4;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.list-id {
+  border: 1px solid #dedede;
+  background-color: #ffffff;
+}
