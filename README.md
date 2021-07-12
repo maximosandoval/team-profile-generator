@@ -52,5 +52,5 @@ You will be prompted with questions to begin filling out the employee informatio
 
 # Screen Shots
 
-(https://github.com/maximosandoval/team-profile-generator/blob/main/Assets//Assets/shot1.png)
-(https://github.com/maximosandoval/team-profile-generator/blob/main/Assets/test1.png)
+![App Screenshot](https://github.com/maximosandoval/team-profile-generator/blob/main/Assets//Assets/shot1.png)
+![App Tests](https://github.com/maximosandoval/team-profile-generator/blob/main/Assets/test1.png)
