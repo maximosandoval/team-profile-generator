@@ -1,6 +1,3 @@
-<!-- Code to Insert Images
-![Search city](images/shot1.png) -->
-
 # Team Profile Generator
 
 Built with Node.js this command-line application takes in information about employees on a software engineering team and quickly creates an online directory.
@@ -55,5 +52,5 @@ You will be prompted with questions to begin filling out the employee informatio
 
 # Screen Shots
 
-[App Screenshot](./Assets/shot1.png)
-[Test Screenshot](https://github.com/maximosandoval/team-profile-generator/blob/main/Assets/test1.png)
+(https://github.com/maximosandoval/team-profile-generator/blob/main/Assets//Assets/shot1.png)
+(https://github.com/maximosandoval/team-profile-generator/blob/main/Assets/test1.png)
