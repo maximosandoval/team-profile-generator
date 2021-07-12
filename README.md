@@ -23,29 +23,25 @@ THEN an HTML file is generated that displays a nicely formatted team roster base
 
 # Installing
 
-A step by step series of examples that tell you how to get a development
-environment running
+Clone project. Run the following line of code in your terminal to install all the needed packages.
 
-Say what the step will be
-
-    Give the example
-
-And repeat
-
-    until finished
-
-End with an example of getting some data out of the system or using it
-for a little demo
+    npm i
 
 ## Tests
 
-Explain how to run the automated tests for this system
+Run the following line of code in the terminal to run the tests.
+
+    npm run test
+
+You will see all 4 test pages and all 14 tests pass for the app.
 
 ## Usage
 
-Explain what these tests test and why
+Install packages and open terminal. Run the following code in the command line.
 
-    Give an example
+    node index.js
+
+You will be prompted with questions to begin filling out the employee information. Select the type of employee you desire and additional questions specific to the role you selected will need to be populated. When the information is all updated select Once you have added all the employees you need select 'No more entries'. Once this is selected your employee cards will be generated to dist/index.html.
 
 # Built With
 
@@ -59,5 +55,5 @@ Explain what these tests test and why
 
 # Screen Shots
 
-[Search city](assets/shot1.png)
-[Search city](assets/test1.png)
+[App Screenshot](assets/shot1.png)
+[App Test Completion](assets/test1.png)
