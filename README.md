@@ -7,11 +7,10 @@ Built with Node.js this command-line application takes in information about empl
 
 Upon successful completion of the question prompts from the end user, an HTML page is generated which displays summaries for each team member. Also, several tests were written for this app to maintain the code for future use.
 
-- [Example 1](https://www.example.com)
-- [Example 2](https://www.example.com) Installing
-- Tests
-- Usage
-- Video on using the app click here.
+- [Installing](https://www.example.com)
+- [Tests](https://www.example.com) 
+- [Usage](https://www.example.com) 
+- [Video](https://www.example.com) 
 
 # Criteria
 
