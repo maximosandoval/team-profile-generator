@@ -4,7 +4,8 @@ const Manager = require("./lib/manager.js");
 const Engineer = require("./lib/engineer.js");
 const Intern = require("./lib/intern.js");
 const fs = require("fs");
-const generateHTML = require("./src/generateHTML.js");
+// const { generateTeam } = require("./src/generateHTML.js");
+const generateTeam = require("./src/generateHTML.js");
 const employee = [];
 const questions = [
   {
@@ -97,7 +98,7 @@ function init() {
   inquirer.prompt(questions).then((answer) => {
     if (answer.choice === "No more") {
       console.log(employee);
-      generateHTML(employee);
+      writeToFile(generateTeam(employee));
       return;
     }
 
@@ -147,10 +148,21 @@ function init() {
 init();
 
 // Create files of employees
-function generateTeam() {
-  fs.writeFileSync("./dist/index.html", generateHTML(employee), "utf-8");
-  console.log("Team directory created.");
+function writeToFile(data) {
+  fs.writeFile("./dist/generate_team.html", data, (err) => {
+    if (err) throw err;
+  });
+  return;
 }
+module.exports = generateTeam;
+// function generateTeam() {
+//   fs.writeFileSync(
+//     "./dist/generate_team.html",
+//     generateTeam(employee),
+//     "utf-8"
+//   );
+//   console.log("Team directory created.");
+// }
 
 // //END OF ARRAY
 // //MARKDOWN PROMPT
