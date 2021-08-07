@@ -5,7 +5,7 @@ const Engineer = require("./lib/engineer.js");
 const Intern = require("./lib/intern.js");
 const fs = require("fs");
 // const { generateTeam } = require("./src/generateHTML.js");
-const generateTeam = require("./src/generateHTML.js");
+// const generateTeam = require("./src/generateHTML.js");
 const employee = [];
 const questions = [
   {
@@ -86,7 +86,7 @@ const intern = [
   },
 ];
 
-// TODO: Create a function to write README file
+// TODO: Create a function to write file
 // function writeToFile(fileName, data) {
 //   fs.writeFileSync(fileName, data, (err) =>
 //     err ? console.error(err) : console.log("File written.")
@@ -154,59 +154,119 @@ function writeToFile(data) {
   });
   return;
 }
-module.exports = generateTeam;
-// function generateTeam() {
-//   fs.writeFileSync(
-//     "./dist/generate_team.html",
-//     generateTeam(employee),
-//     "utf-8"
-//   );
-//   console.log("Team directory created.");
-// }
 
-// //END OF ARRAY
-// //MARKDOWN PROMPT
-// inquirer.prompt(questions).then((answers) => {
-//   console.log(answers);
-//   let information = generateMarkdown(answers);
-//   fs.writeFile("index.html", information, (err) => {
-//     if (err) throw err;
-//   });
-// });
+function generateTeam(arr) {
+  let html = `<!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="dist/style.css">
+      <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/3ff242710e.js"
+      crossorigin="anonymous"
+    ></script>
+      <title>Team Builder</title>
+  </head>
+  <body>
+  <body class="bg-light">
+  <header>
+      <div class="jumbotron jumbotron-fluid">
+          <div class="container">
+              <h1 class="display-4 text-primary">My Team</h1>
+          </div>
+      </div>
+      
+  </header>`;
 
-// // TODO: Create a function to write README file
-// function writeToFile(fileName, data) {
-//   fs.writeFileSync(fileName, data, (err) =>
-//     err ? console.error(err) : console.log("File written.")
-//   );
-// }
+  for (i = 0; i < arr.length; i++) {
+    if (arr[i].getRole() == "Manager") {
+      html += `
+      <div class="card col-sm-3 m-2 border border-info">
+                    <div class="card-body">
+                        <h5 class="card-title text-info">${arr[i].name}</h5>
+                        <p class="card-text text-secondary">${arr[
+                          i
+                        ].getRole()}</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Employee ID: ${
+                          arr[i].id
+                        }</li>
+                        <li class="list-group-item">Email: <a href="mailto:${
+                          arr[i].email
+                        }" class="text-body">${arr[i].email}</a></li>
+                        <li class="list-group-item">Office Number: ${
+                          arr[i].officenumber
+                        }</li>
+                    </ul> 
+                </div>`;
+    }
+    if (arr[i].getRole() == "Engineer") {
+      html += `
+      <div class="card col-sm-3 m-2 border border-info">
+                    <div class="card-body">
+                        <h5 class="card-title text-info">${arr[i].name}</h5>
+                        <p class="card-text text-secondary">${arr[
+                          i
+                        ].getRole()}</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Employee ID: ${
+                          arr[i].id
+                        }</li>
+                        <li class="list-group-item">Email: <a href="mailto:${
+                          arr[i].email
+                        }" class="text-body">${arr[i].email}</a></li>
+                        <li class="list-group-item">Github: <a href="https://www.github.com/${
+                          arr[i].github
+                        }" class="text-body">${arr[i].github}</a></li>
+                    </ul> 
+                </div>`;
+    }
+    if (arr[i].getRole() == "Intern") {
+      html += `
+      <div class="card col-sm-3 m-2 border border-info">
+                    <div class="card-body">
+                        <h5 class="card-title text-info">${arr[i].name}</h5>
+                        <p class="card-text text-secondary">${arr[
+                          i
+                        ].getRole()}</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Employee ID: ${
+                          arr[i].id
+                        }</li>
+                        <li class="list-group-item">Email: <a href="mailto:${
+                          arr[i].email
+                        }" class="text-body">${arr[i].email}</a></li>
+                        <li class="list-group-item">School: ${
+                          arr[i].school
+                        }</li>
+                    </ul> 
+                </div>`;
+    }
+  }
 
-// // function to generate
-// function writeToFile(fileName, data) {
-//   return fs.writeFileSync(fileName, data);
-// }
-// // function to initialize app
-// function init() {
-//   inquirer.prompt(questions).then((response) => {
-//     // console.log(response);
-//     writeToFile("index.html", generateHTML({ ...response }));
-//   });
-// }
-// // Function call to initialize app
-// init();
+  html += `
+   
+           
+  </body>
+  </html>`;
 
-// function begin() {
-//   inquirer
-//     .prompt([
-//       {
-//         message: "what is the manager's name",
-//         name: "name",
-//       },
-//     ])
-//     .then((answer) => {
-//       let newManager = new Manager(answer.name);
-//       console.log(newManager);
-//       employees.push(newManager);
-//       addMore();
-//     });
-// }
+  return html;
+}

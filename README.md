@@ -4,10 +4,10 @@ Built with Node.js this command-line application takes in information about empl
 
 Upon successful completion of the question prompts from the end user, an HTML page is generated which displays summaries for each team member. Also, several tests were written for this app to maintain the code for future use.
 
-- [Installing](https://www.example.com)
-- [Tests](https://www.example.com) 
-- [Usage](https://www.example.com) 
-- [Video](https://www.example.com) 
+- [Installing](https://github.com/maximosandoval#install)
+- [Tests](https://github.com/maximosandoval#tests)
+- [Usage](https://github.com/maximosandoval#usage)
+- [Video](https://media.publit.io/file/DU/module-10-video.mp4)
 
 # Criteria
 
@@ -18,7 +18,7 @@ GIVEN a command-line application that accepts user input
 WHEN I am prompted for my team members and their information
 THEN an HTML file is generated that displays a nicely formatted team roster based on the answers to questions from the user's input.
 
-# Installing
+# Instal
 
 Clone project. Run the following line of code in your terminal to install all the needed packages.
 
@@ -52,5 +52,5 @@ You will be prompted with questions to begin filling out the employee informatio
 
 # Screen Shots
 
-![App Screenshot](https://github.com/maximosandoval/team-profile-generator/blob/main/Assets/shot1.png)
-![App Tests](https://github.com/maximosandoval/team-profile-generator/blob/main/Assets/test1.png)
+![App Screenshot](https://media.publit.io/file/DU/module-10-test.png)
+![App Tests](https://media.publit.io/file/DU/module-10-final.png)
