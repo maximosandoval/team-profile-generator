@@ -4,9 +4,9 @@ Built with Node.js this command-line application takes in information about empl
 
 Upon successful completion of the question prompts from the end user, an HTML page is generated which displays summaries for each team member. Also, several tests were written for this app to maintain the code for future use.
 
-- [Installing](https://github.com/maximosandoval#install)
-- [Tests](https://github.com/maximosandoval#tests)
-- [Usage](https://github.com/maximosandoval#usage)
+- [Installing](https://github.com/maximosandoval/team-profile-generator#install)
+- [Tests](https://github.com/maximosandoval/team-profile-generator#tests)
+- [Usage](https://github.com/maximosandoval/team-profile-generator#usage)
 - [Video](https://media.publit.io/file/DU/module-10-video.mp4)
 
 # Criteria
